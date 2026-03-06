@@ -3,7 +3,7 @@
 
 <ul>
 <% @lists.each do |list| %>
-  <li><%= list.name %></li>
+  <li><%= list.name %> - <%= link_to "Show movie list", list_path(list) %></li>
 <% end %>
 </ul>
 
